@@ -54,7 +54,7 @@ public class Server {
                     }
                 }
 
-                socket.setSoTimeout(1000);
+                socket.setSoTimeout(10000);
 
                 try {
                     for (int i = 0; i < numProcesses; i++) {
