@@ -10,7 +10,7 @@ public class Client {
         this.id = id;
         this.serverAddress = InetAddress.getByName(serverHostname);
         socket = new DatagramSocket();
-        socket.setSoTimeout(1000);
+        socket.setSoTimeout(10000);
         sendInitData(serverPort);
     }
 
